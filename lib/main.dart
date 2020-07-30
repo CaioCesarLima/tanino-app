@@ -1,20 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tanino_app/app/app_module.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Tanino App',
-      theme: ThemeData(
-        primarySwatch: Colors.amber,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: Container(),
-    );
-  }
-}
+void main() => runApp(ModularApp(module: AppModule()));
