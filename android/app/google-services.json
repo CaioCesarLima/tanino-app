@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "437966529625",
+    "firebase_url": "https://tanino-app.firebaseio.com",
+    "project_id": "tanino-app",
+    "storage_bucket": "tanino-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437966529625:android:8075f3134e709e14bf7d48",
+        "android_client_info": {
+          "package_name": "com.example.tanino_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437966529625-a4lqamreo02n9gsjr4c10ibftf44ujms.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tanino_app",
+            "certificate_hash": "06acb3763a71ea68ae3d5243dee4c1eb499e0baf"
+          }
+        },
+        {
+          "client_id": "437966529625-rd2n1actochp4bfrsd9n8e4fh570jl7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCddjjtUg1O8Zame57qk1tL6EicsR7ez2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437966529625-rd2n1actochp4bfrsd9n8e4fh570jl7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
