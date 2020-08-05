@@ -32,7 +32,7 @@ class _FidelityPageState
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[_cardStar(),],
+        children: <Widget>[_cardStar(), _cardFidelity()],
       ),
     );
   }
@@ -73,5 +73,44 @@ class _FidelityPageState
     );
   }
 
-  
+  Widget _cardFidelity() {
+    final size = MediaQuery.of(context).size;
+    return Center(
+      child: Container(
+          width: size.width * .75,
+          height: (size.height - 200) * .9,
+          decoration:
+              BoxDecoration(border: Border.all(color: Colors.white, width: 5)),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              _rowCardFidelity(),
+              _rowCardFidelity(),
+              _rowCardFidelity(),
+            ],
+          )),
+    );
+  }
+
+  Widget _rowCardFidelity() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: <Widget>[
+        _cardAssignFidelity(true),
+        _cardAssignFidelity(true),
+      ],
+    );
+  }
+
+  Widget _cardAssignFidelity(bool assign) {
+    return Container(
+      width: 100,
+      height: 100,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: assign ? Image.network('https://boomera.com.br/wp-content/uploads/2017/05/assinatura-gui-1.png') : Container(),
+    );
+  }
 }
