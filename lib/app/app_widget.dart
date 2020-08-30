@@ -16,7 +16,7 @@ class AppWidget extends StatelessWidget {
           elevation: 0
         )
       ),
-      initialRoute: '/fidelity',
+      initialRoute: '/login',
       onGenerateRoute: Modular.generateRoute,
     );
   }

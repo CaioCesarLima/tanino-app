@@ -1,6 +1,5 @@
 import 'professionals_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:dio/dio.dart';
 import 'professionals_page.dart';
 
 class ProfessionalsModule extends ChildModule {

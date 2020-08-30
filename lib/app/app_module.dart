@@ -1,4 +1,5 @@
 import 'package:tanino_app/app/modules/fidelity/fidelity_module.dart';
+import 'package:tanino_app/app/modules/login/login_module.dart';
 
 import 'app_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -15,7 +16,8 @@ class AppModule extends MainModule {
   @override
   List<Router> get routers => [
         Router(Modular.initialRoute, module: HomeModule()),
-        Router('/fidelity', module: FidelityModule())
+        Router('/fidelity', module: FidelityModule()),
+        Router('/login', module: LoginModule())
       ];
 
   @override
